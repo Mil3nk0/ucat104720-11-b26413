@@ -24,6 +24,10 @@ def run(**args):
 			print (othKeyz)
 			return str(othKeyz)
 
+			#write to file
+
+			#when file gets to size send to return of main def
+
 		# pass execution to next hook
 		return True
 
