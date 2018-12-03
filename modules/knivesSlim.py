@@ -1,6 +1,8 @@
 import winreg
 import os, getpass
 
+# KnivesSlim (Version 0.2)
+
 def run(**args):
 	filepath = os.path.dirname(__file__) +"/"
 	filename = os.path.basename(__file__)
